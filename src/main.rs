@@ -51,9 +51,9 @@ fn main() {
     let final_state = register.state_vector().elements();
     let c0 = (theta/2.0).cos();
     let c1 = (theta/2.0).sin();
-    println!("앨리스가 '00' 측정 -> 밥의 상태: [{}, {}] (원래 |ψ> 상태)", final_state[0], final_state[1]);
-    println!("앨리스가 '01' 측정 -> 밥의 상태: [{}, {}] (X 게이트 적용된 상태)", final_state[2], final_state[3]);
-    println!("앨리스가 '10' 측정 -> 밥의 상태: [{}, {}] (Z 게이트 적용된 상태)", final_state[4], final_state[5]);
-    println!("앨리스가 '11' 측정 -> 밥의 상태: [{}, {}] (Z, X 게이트 적용된 상태)", final_state[6], final_state[7]);
+    println!("앨리스가 '00' 측정 -> 밥의 상태: [{}, {}] (원래 |ψ> 상태)", final_state[0] * 2.0, final_state[4]*2.0);
+    println!("앨리스가 '01' 측정 -> 밥의 상태: [{}, {}] (X 게이트 적용된 상태)", final_state[1] * 2.0, final_state[5] * 2.0);
+    println!("앨리스가 '10' 측정 -> 밥의 상태: [{}, {}] (Z 게이트 적용된 상태)", final_state[2] * 2.0 , final_state[6] * 2.0);
+    println!("앨리스가 '11' 측정 -> 밥의 상태: [{}, {}] (Z, X 게이트 적용된 상태)", final_state[3] * 2.0, final_state[7] * 2.0);
 }
 

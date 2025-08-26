@@ -111,9 +111,9 @@ dependencies = [
 
 [[package]]
 name = "rain_quantum_simulator"
-version = "0.3.0"
+version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bc4c51ff0ce999d830e7339cf983c03153c53a793aba559bab9a24c09a1beb46"
+checksum = "81a853b304b98bb816ca134ec3a3837081d7df889853841e284c18e5bc8f3326"
 dependencies = [
  "complex_rs",
  "num-traits",

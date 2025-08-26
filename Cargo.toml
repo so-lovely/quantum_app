@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-rain_quantum_simulator="0.3.0"
+rain_quantum_simulator="0.4.0"
 rain_linalg="0.6.0"
 complex_rs="0.1.0"
 num-traits = "0.2.19"
